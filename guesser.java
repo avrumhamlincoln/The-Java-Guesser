@@ -2,11 +2,35 @@ import java.util.*;
 
 public class Guesser{
 	public static void main(String[] args){
-		
+		String choice = Menu();
+
+		bool keepGoing = true;
+
+		while (keepGoing){
+		String choice = menu();
+
+        		if (choice == "0") {
+            			keepGoing = false;
+            			System.out.println("Exiting program ...");
+        		}
+
+			else if (choice == "1"){
+            			Human();
+        		}
+
+			else if (choice == "2") {
+           			Computer();
+			}
+		}
 	}
 
 	public Menu(){
-	
+		System.out.println("MENU");
+		System.out.println("0. Exit");
+		System.out.println("1. Human Guesser");
+		System.out.println("2. Computer Guesser");
+		String choice = input.nextLine();
+     		return choice;
 	}
 
 	public Human(){
