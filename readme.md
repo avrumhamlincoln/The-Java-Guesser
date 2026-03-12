@@ -25,7 +25,7 @@ while keepGoing:
         elif tries = 7:
             say "average :/"
         else:
-            say "you didn't do so goon :["
+            say "you didn't do so good :["
 
         keepGoing = False 
 ```
